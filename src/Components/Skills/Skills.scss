@@ -1,0 +1,53 @@
+.skillsContent{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+.skillsHolder{
+    position: relative;
+    height: fit-content;
+    left: 5vw;
+    top: 30px;
+    width: 33vw;
+    border: black 1px solid;
+    box-shadow: black 2px 5px 5px;
+}
+.techHolder{
+    position: relative;
+    height: fit-content;
+    left: 28vw;
+    top: 30px;
+    width: 33vw;
+    border: black 1px solid;
+    box-shadow: black 2px 5px 5px;
+}
+.skillsPageHead{
+    text-align: center;
+    font-style: italic; 
+}
+.skills{
+    border: black 1px solid;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: fit-content;
+    left: 10%;
+    margin-bottom: 15px;
+}
+.tech{
+    border: black 1px solid;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: fit-content;
+    left: 10%;
+    margin-bottom: 15px;
+}
+ul{
+    list-style-type: square;
+    font-size: 25px;
+
+}

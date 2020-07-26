@@ -24,8 +24,6 @@ function Landing(){
                     <Button className={style.navButton}>Projects</Button>
                 </div>
             </div>
-            <div>
-            </div>
         </div>
     )
 }
