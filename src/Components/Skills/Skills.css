@@ -21,6 +21,7 @@
   border: black 1px solid;
   -webkit-box-shadow: black 2px 5px 5px;
           box-shadow: black 2px 5px 5px;
+  margin-bottom: 30px;
 }
 
 .techHolder {
@@ -34,6 +35,7 @@
   border: black 1px solid;
   -webkit-box-shadow: black 2px 5px 5px;
           box-shadow: black 2px 5px 5px;
+  margin-bottom: 30px;
 }
 
 .skillsPageHead {
@@ -57,6 +59,9 @@
   height: fit-content;
   left: 10%;
   margin-bottom: 15px;
+  list-style-type: none;
+  -webkit-box-shadow: black 0px 2px 2px;
+          box-shadow: black 0px 2px 2px;
 }
 
 .tech {
@@ -65,16 +70,21 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 80%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   left: 10%;
   margin-bottom: 15px;
+}
+
+.techHeads {
+  width: 100%;
+  text-align: center;
 }
 
 ul {
