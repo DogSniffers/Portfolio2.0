@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '@material-ui/core/Button'
 import './Projects.css'
 
 function Projects(){
@@ -13,12 +14,18 @@ function Projects(){
                     <div className='projectImageBox'>
                         <img></img>
                     </div>
+                    <div className='projectLinkBox'>
+                        <Button>GitHub</Button>
+                    </div>
                 </div>
                 <div className='projectBox'>
                     <h2 className='projectsSubHead'>Board-Game Hosting Site</h2>
-                    <p className='projectInfo'></p>
+                    <p className='projectInfo'>This was my group-project that I helped develop at my time at DevMountain. The goal of the app was to create a site to host board games. This project was a great learning experience, because the project started during the initial Covid-19 lock-down and required me and my group to work from home to complete the project. The project included the following technologies: React, HTML, CSS, NodeJS, React-Redux, Axios, Material-UI, and Socket.IO.</p>
                     <div className='projectImageBox'>
                         <img></img>
+                    </div>
+                    <div className='projectLinkBox'>
+                        <Button>GitHub</Button>
                     </div>
                 </div>
                 
@@ -31,6 +38,9 @@ function Projects(){
                     <p className='projectInfo'></p>
                     <div className='projectImageBox'>
                         <img></img>
+                    </div>
+                    <div className='projectLinkBox'>
+                        <Button>GitHub</Button>
                     </div>
                 </div>
             </div>
