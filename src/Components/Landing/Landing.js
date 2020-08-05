@@ -4,9 +4,17 @@ import React from 'react'
 import './Landing.css'
 
 
-function Landing(){
+function Landing(props){
     return(
-        <>
+        <div id='landingBody'>
+        <div className='landingLinkHolder'>
+            <div className='landingLink'>
+                <div className='linkAM'>
+                    <h3>About Me!</h3>
+                </div>
+            </div>
+            
+        </div>
              <div>
                 <h1 className='HI'>Hi,</h1>
             </div>
@@ -19,7 +27,7 @@ function Landing(){
             <div>
                 <h1 className='landingHeadText'>Welcome to my Portfolio!</h1>  
             </div>
-        </>
+        </div>
     )
 }
 

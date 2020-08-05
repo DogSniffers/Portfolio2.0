@@ -1,60 +1,117 @@
 import React from 'react'
+import {useState,setState} from 'react'
+import Button from '@material-ui/core/Button'
 import './Skills.css'
 
-function Skills(){
+function Skills(props){
+    const [langList,setLangList] = useState(false)
+    const [frontEndList,setFrontEndList] = useState(false)
+    const [backEndList,setBackEndList] = useState(false)
+
+    const openLangList = () => {
+        setLangList(true)
+        setFrontEndList(false)
+        setBackEndList(false)
+    }
+    const openFrontEndList = () => {
+        setLangList(false)
+        setFrontEndList(true)
+        setBackEndList(false)
+    }
+    const openBackEndList = () => {
+        setLangList(false)
+        setFrontEndList(false)
+        setBackEndList(true)
+    }
     return(
         <div>
-            <div className='skillsContent'>
-                <div className='skillsHolder'>
-                    <div>
-                        <h1 className='skillsPageHead'>Skills</h1>
+            <div>
+                {langList === true ? (
+                    <div className='languages'>
+                        <div className='javaHolder'>
+                            <h1 className='java'>Java</h1>
+                        </div>
+                        <div className='htmlHolder'>
+                            <h1 className='html'>HTML</h1>
+                        </div>
+                        <div className='jsHolder'>
+                            <h1 className='js'>JavaScript</h1>
+                        </div>
+                        <div className='cssHolder'>
+                            <h1 className='css'>CSS</h1>
+                        </div>
                     </div>
-                    <div className='skills'>
-                        <ul>
-                            <li>Test</li>
-                        </ul>
-                    </div>
-                </div>
-                <div className='techHolder'>
-                    <h1 className='skillsPageHead'>Tech</h1>
-                    <div className='tech'>
+                ):(
+                    null
+                )}
+                {frontEndList === true ? (
+                    <div className='front-end'>
                         <div>
-                            <h2 className='techHeads'>Languages</h2>
-                                <ul>
-                                    <li>Java</li>
-                                    <li>HTML</li>
-                                    <li>JavaScript</li>
-                                    <li>CSS</li>
-                                </ul>
+                            <h1>ChartJS</h1>
                         </div>
                         <div>
-                            <h2 className='techHeads'>Technologies</h2>
-                            <div>
-                                <h3 className='techHeads'>Front-End</h3>
-                                    <ul>
-                                        <li>ChartJS</li>
-                                        <li>Material.UI</li>
-                                        <li>React</li>
-                                        <li>SASS</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h3 className='techHeads'>Back-End</h3>
-                                    <ul>
-                                        <li>Axios</li>
-                                        <li>NodeJS</li>
-                                        <li>PostgreSQL</li>
-                                        <li>Postman</li>
-                                        <li>React Redux</li>
-                                        <li>Socket.io</li>
-                                        <li>SQL Tabs</li>
-                                    </ul>
-                            </div>
+                            <h1>Material.UI</h1>
+                        </div>
+                        <div>
+                            <h1>React</h1>
+                        </div>
+                        <div>
+                            <h1>Sass</h1>
+                        </div>
+                    </div>
+                ):(
+                    null
+                )}
+                {backEndList === true ? (
+                    <div className='back-end'>
+                        <div>
+                            <h1>Axios</h1>
+                        </div>
+                        <div>
+                            <h1>NodeJS</h1>
+                        </div>
+                        <div>
+                            <h1>PostgreSQL</h1>
+                        </div>
+                        <div>
+                            <h1>Postman</h1>
+                        </div>
+                        <div>
+                            <h1>React Redux</h1>
+                        </div>
+                        <div>
+                            <h1>Socket.IO</h1>
+                        </div>
+                        <div>
+                            <h1>SQL Tabs</h1>
+                        </div>
+                    </div>
+                ):(
+                    null
+                )}
+                <div className='skillsButtonHolder'>
+                    <div className='skillsType'>
+                        <div>
+                            <Button  onClick={() => openLangList()}>Language</Button>
+                        </div>
+                        <div>
+                            <Button  onClick={() => openFrontEndList()}>Front-End</Button>
+                        </div>
+                        <div>
+                            <Button  onClick={() => openBackEndList()}>Back-End</Button>
+                        </div>
+                    </div>
+                    <div className='skillsNavButtons'>
+                        <div>
+                            <Button onClick={() => props.history.push('/aboutme')}>About Me</Button>
+                        </div>
+                        <div>
+                            <Button onClick={() => props.history.push('/projects')}>Projects</Button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div>     
     )
 }
 

@@ -1,6 +1,18 @@
-.skillsContent {
-  width: 100vw;
-  height: 100vh;
+@-webkit-keyframes leftToRight {
+  from {
+    left: 70vw;
+  }
+}
+
+@keyframes leftToRight {
+  from {
+    left: 70vw;
+  }
+}
+
+.skillsButtonHolder {
+  position: fixed;
+  top: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8,87 +20,106 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-}
-
-.skillsHolder {
-  position: relative;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  left: 5vw;
-  top: 30px;
-  width: 33vw;
-  border: black 1px solid;
-  -webkit-box-shadow: black 2px 5px 5px;
-          box-shadow: black 2px 5px 5px;
-  margin-bottom: 30px;
-}
-
-.techHolder {
-  position: relative;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  left: 28vw;
-  top: 30px;
-  width: 33vw;
-  border: black 1px solid;
-  -webkit-box-shadow: black 2px 5px 5px;
-          box-shadow: black 2px 5px 5px;
-  margin-bottom: 30px;
-}
-
-.skillsPageHead {
-  text-align: center;
-  font-style: italic;
-}
-
-.skills {
-  border: black 1px solid;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 80%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  left: 10%;
-  margin-bottom: 15px;
-  list-style-type: none;
-  -webkit-box-shadow: black 0px 2px 2px;
-          box-shadow: black 0px 2px 2px;
-}
-
-.tech {
-  border: black 1px solid;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 80%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  left: 10%;
-  margin-bottom: 15px;
-}
-
-.techHeads {
   width: 100%;
-  text-align: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: white;
 }
 
-ul {
-  list-style-type: square;
-  font-size: 25px;
+.skillsType {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 50%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.skillsNavButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 50%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.javaHolder {
+  position: relative;
+  width: 30vw;
+  height: 120px;
+  background-color: yellow;
+  -webkit-box-shadow: black 5px 5px;
+          box-shadow: black 5px 5px;
+  text-align: center;
+  left: 10vw;
+  -webkit-animation-name: leftToRight;
+          animation-name: leftToRight;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.java {
+  font-family: cursive;
+  font-size: 90px;
+}
+
+.htmlHolder {
+  position: relative;
+  width: 30vw;
+  height: 120px;
+  background-color: yellow;
+  -webkit-box-shadow: black 5px 5px;
+          box-shadow: black 5px 5px;
+  text-align: center;
+  left: 30vw;
+}
+
+.html {
+  font-family: cursive;
+  font-size: 78px;
+}
+
+.jsHolder {
+  position: relative;
+  width: 30vw;
+  height: 120px;
+  background-color: yellow;
+  -webkit-box-shadow: black 5px 5px;
+          box-shadow: black 5px 5px;
+  text-align: center;
+  left: 50vw;
+}
+
+.js {
+  font-family: cursive;
+  font-size: 78px;
+}
+
+.cssHolder {
+  position: relative;
+  width: 30vw;
+  height: 120px;
+  background-color: yellow;
+  -webkit-box-shadow: black 5px 5px;
+          box-shadow: black 5px 5px;
+  text-align: center;
+  left: 20vw;
+}
+
+.css {
+  font-family: cursive;
+  font-size: 78px;
 }
 /*# sourceMappingURL=Skills.css.map */

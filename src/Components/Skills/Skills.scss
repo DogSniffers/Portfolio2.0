@@ -1,60 +1,61 @@
-.skillsContent{
-    width: 100vw;
-    height: 100vh;
+@import '../../Sass/mixin';
+
+@keyframes leftToRight{
+    from {left: 70vw;}
+}
+.skillsButtonHolder{
+    position: fixed;
+    top: 0px;
     display: flex;
     flex-direction: row;
-}
-.skillsHolder{
-    position: relative;
-    height: fit-content;
-    left: 5vw;
-    top: 30px;
-    width: 33vw;
-    border: black 1px solid;
-    box-shadow: black 2px 5px 5px;
-    margin-bottom: 30px;
-}
-.techHolder{
-    position: relative;
-    height: fit-content;
-    left: 28vw;
-    top: 30px;
-    width: 33vw;
-    border: black 1px solid;
-    box-shadow: black 2px 5px 5px;
-    margin-bottom: 30px;
-}
-.skillsPageHead{
-    text-align: center;
-    font-style: italic; 
-}
-.skills{
-    border: black 1px solid;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    height: fit-content;
-    left: 10%;
-    margin-bottom: 15px;
-    list-style-type: none;
-    box-shadow: black 0px 2px 2px;
-}
-.tech{
-    border: black 1px solid;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    height: fit-content;
-    left: 10%;
-    margin-bottom: 15px;
-}
-.techHeads{
     width: 100%;
-    text-align: center;
+    justify-content: space-evenly;
+    background-color: white;
 }
-ul{
-    list-style-type: square;
-    font-size: 25px;
+.skillsType{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-evenly;
+}
+.skillsNavButtons{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-evenly;
+}
+// Languages Tab
+.javaHolder{
+    @include techBox();
+    left: 10vw;
+    animation-name: leftToRight;
+    animation-duration: 1s;
+}
+.java{
+    font-family: cursive;
+    font-size: 90px;
+}
+.htmlHolder{
+    @include techBox();
+    left: 30vw;
+}
+.html{
+    font-family: cursive;
+    font-size: 78px;
+}
+.jsHolder{
+    @include techBox();
+    left: 50vw;
+}
+.js{
+    font-family: cursive;
+    font-size: 78px;
+}
+.cssHolder{
+    @include techBox();
+    left: 20vw;
+}
+.css{
+    font-family: cursive;
+    font-size: 78px;
 }

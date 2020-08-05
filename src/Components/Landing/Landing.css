@@ -1,3 +1,66 @@
+#landingBody {
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: hotpink;
+}
+
+.landingLinkHolder {
+  position: relative;
+  margin-top: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100vw;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 20px;
+}
+
+.landingLink {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background-color: darkgrey;
+  border: 7.50px solid black;
+  -webkit-box-shadow: black 4px 4px 4px;
+          box-shadow: black 4px 4px 4px;
+}
+
+.linkAM {
+  position: relative;
+  top: 8px;
+  left: 8px;
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  background-color: chartreuse;
+  border: 2px solid darkgreen;
+  text-align: center;
+  font-size: 37px;
+  -webkit-transition: 0.5s background-color;
+  transition: 0.5s background-color;
+}
+
+.linkAM:hover {
+  cursor: pointer;
+  background-color: green;
+}
+
+.linkAM:hover ~ #landingBody {
+  background-color: blue;
+}
+
+.linkAM:active {
+  background-color: honeydew;
+}
+
 .HI {
   position: fixed;
   font-size: 6.944444444444445vw;
