@@ -6,14 +6,20 @@ import './Landing.css'
 
 function Landing(){
     return(
-        <div className='landing'>
-            <div className='landingHolder'>
-                    <img className='mugshot'></img>
-                    <h1 className='landingText'>Hi, I'm Noah Van Buskirk</h1>
-                    <h2 className='landingText'>I code things!</h2>
-                
+        <>
+             <div>
+                <h1 className='HI'>Hi,</h1>
             </div>
-        </div>
+            <div>
+                <h2 className='IM'>I'm</h2>
+            </div>
+            <div className='NVB'>
+                <h1>Noah Van Buskirk</h1>
+            </div>
+            <div>
+                <h1 className='landingHeadText'>Welcome to my Portfolio!</h1>  
+            </div>
+        </>
     )
 }
 

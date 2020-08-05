@@ -1,23 +1,38 @@
-.landing{
+.HI{
     position: fixed;
-    top: 15vh;
-    width: 100vw;
-    height: 100vh;
+    font-size: 6.944444444444445vw;
+    width: 100%;
+    bottom: 1.7361111111111112vw;
+    right: -1.3888888888888888vw;
 }
-.landingHolder{
-    background-color: blue;
-    width: 50%;
-    margin-left: 25%;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border: darkblue double 20px;
-    box-shadow: 2px 5px 5px black;
+.IM{
+    position: fixed;
+    // 60px
+    font-size: 4.166666666666667vw;
+    width: 100%;
+    // 48px
+    bottom: 3.3333333333333335vw;
+    // 150px
+    right: -10.416666666666666vw;
 }
-.mugshot{
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    border: 1px black solid;
-    background-color: white;
+.NVB{
+    position: fixed;
+    font-style: italic;
+    font-size: 4.861111111111111vw;
+    text-shadow: 4px 4px black;
+    width: 100%;
+    bottom: -1.3888888888888888vw;
+    right: -17.36111111111111vw;
+    color: crimson;
+
+}
+.landingHeadText{
+    // 90px
+    font-size: 6.25vw;
+    position: fixed;
+    width: 100%;
+    // 55px
+    bottom:-3.8194444444444446vw;
+    // 35px
+    right: -2.4305555555555554vw;
 }
